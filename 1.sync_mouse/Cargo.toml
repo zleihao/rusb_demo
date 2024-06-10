@@ -1,0 +1,13 @@
+[package]
+name = "usb"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target.armv7-unknown-linux-gnueabihf]
+linker="arm-linux-gnueabi-gcc"
+
+
+[dependencies]
+rusb = "0.9.4"
